@@ -10270,12 +10270,12 @@ p {
   line-height: 1.9;
 }
 
-#footer a {
+#footer .copyright a {
   color: #222;
   text-decoration: none;
 }
 
-#footer a:hover {
+#footer .copyright a:hover {
   color: #17a697;
   text-decoration: none;
 }
