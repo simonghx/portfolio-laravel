@@ -1,0 +1,78 @@
+// COMMENT
+
+#comment
+  position: relative
+  height: 100%
+  width: 100%
+
+  p
+    color: white
+    font-size: $font-size-intro
+    font-weight: $font-mid
+    margin : 0 130px
+  
+  .clientspace
+    position: relative
+    z-index: 99
+      
+    h2, 
+    p, 
+    h6
+      flex: 1
+      
+
+
+.bg-comment
+  background-image: $img-montagne2 !important
+  display: block !important
+  background-attachment: fixed !important
+  background-position-x: center !important
+  background-size: 100% !important
+
+  &::before
+    background-color: $overlight-dark !important
+    content: "" !important
+    min-width: 100% !important
+    min-height: 100% !important
+    left: 0 !important
+    top: 0 !important
+    display: block !important
+    position: absolute !important
+
+
+.quote-icon
+  flex: 1
+  border: $button-box-light
+  width: 40px
+  height: 40px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.comment-content
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+.text-regular
+  font-weight: $font-fine
+
+.item
+  background-color: white
+  border: $button-box-dark
+
+.item-active
+  background-color: $dark
+  border: $button-box-light
+
+.item,
+.item-active
+  display: inline-block
+  height: 9px
+  width: 9px
+  border-radius: 100%
+
+.mb-40neg
+  margin-bottom: -40px

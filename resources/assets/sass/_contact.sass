@@ -1,0 +1,40 @@
+// CONTACT
+
+#contact
+  p
+    font-size: $font-size-intro
+    font-weight: $font-large
+    max-width: 700px
+
+  .row
+    max-width: 700px
+    margin: auto
+
+    .form-control
+      margin-bottom: 15px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.10)
+      border-top: 0
+      border-left: 0
+      border-right: 0
+      border-radius: 0 !important
+      font-size: 12px
+      font-family: sans-serif
+      padding: 15px
+
+      &:focus
+        border-bottom: 1px solid $dark
+        box-shadow: none
+
+  a
+    text-decoration: none
+    text-transform: uppercase
+    color: white
+    padding: 15px 30px
+    background-color: $dark
+    font-size: 12px
+    font-weight: $font-xlarge
+    letter-spacing: 1.1px
+    transition: $transition-lente  
+
+    &:hover
+      background-color: $success
