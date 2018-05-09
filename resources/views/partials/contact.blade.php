@@ -28,7 +28,7 @@
             </div>
         </form>
         <div class="col-12 text-center">
-            <a href="" class="btn-message">Send Message</a>
+            <a href="#" id="btn-message">Send Message</a>
         </div>
 
         
