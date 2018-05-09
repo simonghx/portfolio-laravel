@@ -9,42 +9,62 @@
             <h2>Some Interesting Facts</h2>
         </div>
         <div class="row text-white">
-            <div class="col-3 d-flex justify-content-center">
-            <div class="icon-counter mr-4">
-                <i class="fas fa-trophy"></i>
-            </div>
-            <div class="counter-content text-left">
-                <h1 class="counter-title">103</h1>
-                <h5 class="counter-sub-title">awwards</h5>
-            </div>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-            <div class="icon-counter mr-4">
-                <i class="fas fa-bullseye"></i>
-            </div>
-            <div class="counter-content text-left">
-                <h1 class="counter-title">256</h1>
-                <h5 class="counter-sub-title">clients</h5>
-            </div>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-            <div class="icon-counter mr-4">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="counter-content text-left">
-                <h1 class="counter-title">348</h1>
-                <h5 class="counter-sub-title">projects</h5>
-            </div>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-            <div class="icon-counter mr-4">
-                <i class="fas fa-male"></i>
-            </div>
-            <div class="counter-content text-left">
-                <h1 class="counter-title">23</h1>
-                <h5 class="counter-sub-title">team</h5>
-            </div>
-            </div>
+            @component('components.factsicon')
+                @slot('icon')
+                    fas fa-trophy
+                @endslot
+
+                @slot('number')
+                    103
+                @endslot
+
+                @slot('subtitle')
+                    awwards
+                @endslot
+            @endcomponent
+
+            @component('components.factsicon')
+                @slot('icon')
+                    fas fa-bullseye
+                @endslot
+
+                @slot('number')
+                    256
+                @endslot
+
+                @slot('subtitle')
+                    clients
+                @endslot
+            @endcomponent
+
+            @component('components.factsicon')
+                @slot('icon')
+                    fas fa-briefcase
+                @endslot
+
+                @slot('number')
+                    348
+                @endslot
+
+                @slot('subtitle')
+                    projects
+                @endslot
+            @endcomponent
+
+            @component('components.factsicon')
+                @slot('icon')
+                    fas fa-male
+                @endslot
+
+                @slot('number')
+                    23
+                @endslot
+
+                @slot('subtitle')
+                    team
+                @endslot
+            @endcomponent
+
         </div>
     </section>
     <!-- Fin Section FACTS -->

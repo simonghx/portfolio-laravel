@@ -1,11 +1,15 @@
 <!-- Début PORTFOLIO -->
     <section id="portfolio" class="section-padding">
-        <div class="container text-center intro-about soustitre mb-60">
-        <h1>Our Portfolio</h1>
-        <p>Eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident
-        </p>
-        </div>
+        @component('components.soustitre')
+            @slot('subtitle')
+                Our Portfolio
+            @endslot
+
+            @slot('text')
+                Eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            @endslot
+        @endcomponent
+        
         <div class="container menu-gallery">
 
         <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
@@ -30,73 +34,58 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-            <div class="row mb-4">
-                <div class="col-4">
-                <img src="./img/gallery/01.jpg" alt="" class="img-fluid">
+                <div class="row mb-4">
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/01.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/02.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/03.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/04.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/05.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/06.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/07.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/08.jpg
+                            @endslot
+                        @endcomponent
+                        @component('components.galerie')
+                            @slot('image')
+                                ./img/gallery/09.jpg
+                            @endslot
+                        @endcomponent
+                    
                 </div>
-                <div class="col-4">
-                <img src="./img/gallery/02.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/03.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
-
-            <div class="row mb-4">
-                <div class="col-4">
-                <img src="./img/gallery/04.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/05.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/06.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
-
-            <div class="row mb-4">
-                <div class="col-4">
-                <img src="./img/gallery/07.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/08.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/09.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
-
             </div>
 
             <div class="tab-pane fade" id="pills-branding" role="tabpanel" aria-labelledby="pills-branding-tab">
-            <div class="row mb-4">
-                <div class="col-4">
-                <img src="./img/gallery/02.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/03.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/04.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-4">
-                <img src="./img/gallery/05.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/06.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-4">
-                <img src="./img/gallery/08.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-4">
-                <img src="./img/gallery/09.jpg" alt="" class="img-fluid">
-                </div>
-
-            </div>
+            ...
             </div>
 
             <div class="tab-pane fade" id="pills-creative" role="tabpanel" aria-labelledby="pills-creative-tab">...</div>
