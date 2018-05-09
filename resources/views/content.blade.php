@@ -2,29 +2,29 @@
 
 @section('content')
 
-    @include('main.about')
+    @include('partials.about')
 
-    @include('main.skills')
+    @include('partials.skills')
 
-    @include('main.ourteam')
+    @include('partials.ourteam')
 
-    @include('main.features')
+    @include('partials.features')
 
-    @include('main.comment')
+    @include('partials.comment')
 
-    @include('main.portfolio')
+    @include('partials.portfolio')
 
-    @include('main.facts')
+    @include('partials.facts')
 
-    @include('main.iphone')
+    @include('partials.iphone')
 
-    @include('main.customers')
+    @include('partials.customers')
 
-    @include('main.contact')
+    @include('partials.contact')
 
-    @include('main.adresse')
+    @include('partials.adresse')
 
-    @include('main.carte')
+    @include('partials.carte')
 
 @endsection
 

@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('content');
-});
+Route::get('/', 'PageController@index');
