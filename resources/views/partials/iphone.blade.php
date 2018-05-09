@@ -1,103 +1,120 @@
 <!-- Section IPHONE -->
     <section id="iphone" class="section-padding">
         <div class="container">
-        <div class="titleiphone text-center intro-about soustitre mb-60">
-            <h1>
-            Key Features
-            </h1>
-        </div>
+        @component('components.soustitre')
+            @slot('subtitle')
+                Key Features
+            @endslot
+            @slot('text')
+                
+            @endslot
+        @endcomponent
 
         <div class="row">
             <div class="col-md-4">
-            <div class="features-container">
-                <div class="features-content text-right">
-                <h4>Bootstrap 4</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
-                <div class="features-icons text-right">
-                <i class="fas fa-desktop"></i>
-                </div>
+
+                @component('components.features1')
+                    @slot('subtitle')
+                        Bootstrap 4
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                    @slot('icon')
+                        fas fa-desktop
+                    @endslot
+                @endcomponent
+
+                @component('components.features1')
+                    @slot('subtitle')
+                        Clean Code & Design
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                    @slot('icon')
+                        fas fa-sync-alt
+                    @endslot
+                @endcomponent
+
+                @component('components.features1')
+                    @slot('subtitle')
+                        Flexible & Customizable
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                    @slot('icon')
+                        fas fa-cogs
+                    @endslot
+                @endcomponent
+
+                @component('components.features1')
+                    @slot('subtitle')
+                        Unlimited Layouts
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                    @slot('icon')
+                        fas fa-database
+                    @endslot
+                @endcomponent
+            
             </div>
-            <div class="features-container">
-                <div class="features-content text-right">
-                <h4>Clean Code & Design</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
-                <div class="features-icons text-right">
-                <i class="fas fa-sync-alt"></i>
-                </div>
-            </div>
-            <div class="features-container">
-                <div class="features-content text-right">
-                <h4>Flexible & Customizable</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
-                <div class="features-icons text-right">
-                <i class="fas fa-cogs"></i>
-                </div>
-            </div>
-            <div class="features-container">
-                <div class="features-content text-right">
-                <h4>Unlimited Layouts</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
-                <div class="features-icons text-right">
-                <i class="fas fa-database"></i>
-                </div>
-            </div>
-            </div>
+
             <div class="col-md-4">
             <img src="./img/mockup01.png" alt="" class="img-fluid">
             </div>
+
             <div class="col-md-4">
-            <div class="features-container">
-                <div class="features-icons text-left">
-                <i class="far fa-comment-alt"></i>
-                </div>
-                <div class="features-content text-left">
-                <h4>Fully Reasponsive</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
+                @component('components.features2')
+                    @slot('icon')
+                        far fa-comment-alt
+                    @endslot
+                    @slot('subtitle')
+                        Fully Reasponsive
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                @endcomponent
 
-            </div>
-            <div class="features-container">
-                <div class="features-icons text-left">
-                <i class="fas fa-tags"></i>
-                </div>
-                <div class="features-content text-left">
-                <h4>Multi Prapose Theme</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
+                @component('components.features2')
+                    @slot('icon')
+                        fas fa-tags
+                    @endslot
+                    @slot('subtitle')
+                        Multi Prapose Theme
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                @endcomponent
 
-            </div>
-            <div class="features-container">
-                <div class="features-icons text-left">
-                <i class="far fa-file-alt"></i>
-                </div>
-                <div class="features-content text-left">
-                <h4>Well Documented</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
+                @component('components.features2')
+                    @slot('icon')
+                        far fa-file-alt
+                    @endslot
+                    @slot('subtitle')
+                        Well Documented
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                @endcomponent
 
-            </div>
-            <div class="features-container">
-                <div class="features-icons text-left">
-                <i class="far fa-comments"></i>
-                </div>
-                <div class="features-content text-left">
-                <h4>Friendly Support</h4>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                    pede justo.</p>
-                </div>
-
-            </div>
+                @component('components.features2')
+                    @slot('icon')
+                        far fa-comments
+                    @endslot
+                    @slot('subtitle')
+                        Friendly Support
+                    @endslot
+                    @slot('text')
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+                    @endslot
+                @endcomponent
             </div>
         </div>
         </div>
