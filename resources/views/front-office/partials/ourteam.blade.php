@@ -1,7 +1,7 @@
 <!-- Section Our team -->
     <section id="team" class="section-padding">
         <!-- Titre de la team -->
-        @component('components.soustitre')
+        @component('front-office.components.soustitre')
             @slot('subtitle')
                 Meet Our Team
             @endslot
@@ -14,7 +14,7 @@
 
         <!-- Tableau team -->
         <div class="row text-center container">
-            @component('components.personna')
+            @component('front-office.components.personna')
                 @slot('image')
                     ./img/personna/01.jpg
                 @endslot
@@ -26,7 +26,7 @@
                 @endslot
             @endcomponent
 
-            @component('components.personna')
+            @component('front-office.components.personna')
                 @slot('image')
                     ./img/personna/02.jpg
                 @endslot
@@ -38,7 +38,7 @@
                 @endslot
             @endcomponent
 
-            @component('components.personna')
+            @component('front-office.components.personna')
                 @slot('image')
                     ./img/personna/03.jpg
                 @endslot

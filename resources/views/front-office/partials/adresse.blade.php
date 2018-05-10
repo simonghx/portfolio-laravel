@@ -2,7 +2,7 @@
     <section id="adresse">
         <div class="container">
             <div class="row">
-                @component('components.adressicon')
+                @component('front-office.components.adressicon')
                     @slot('icon')
                         fas fa-mobile
                     @endslot
@@ -12,7 +12,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.adressicon',['myclass'=>'mx-5'])
+                @component('front-office.components.adressicon',['myclass'=>'mx-5'])
                     @slot('icon')
                         fas fa-map-marker-alt
                     @endslot
@@ -22,7 +22,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.adressicon')
+                @component('front-office.components.adressicon')
                     @slot('icon')
                         far fa-envelope-open
                     @endslot

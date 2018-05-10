@@ -1,7 +1,7 @@
 <!-- Section IPHONE -->
     <section id="iphone" class="section-padding">
         <div class="container">
-        @component('components.soustitre')
+        @component('front-office.components.soustitre')
             @slot('subtitle')
                 Key Features
             @endslot
@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-4">
 
-                @component('components.features1')
+                @component('front-office.components.features1')
                     @slot('subtitle')
                         Bootstrap 4
                     @endslot
@@ -25,7 +25,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.features1')
+                @component('front-office.components.features1')
                     @slot('subtitle')
                         Clean Code & Design
                     @endslot
@@ -37,7 +37,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.features1')
+                @component('front-office.components.features1')
                     @slot('subtitle')
                         Flexible & Customizable
                     @endslot
@@ -49,7 +49,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.features1')
+                @component('front-office.components.features1')
                     @slot('subtitle')
                         Unlimited Layouts
                     @endslot
@@ -68,7 +68,7 @@
             </div>
 
             <div class="col-md-4">
-                @component('components.features2')
+                @component('front-office.components.features2')
                     @slot('icon')
                         far fa-comment-alt
                     @endslot
@@ -80,7 +80,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.features2')
+                @component('front-office.components.features2')
                     @slot('icon')
                         fas fa-tags
                     @endslot
@@ -92,7 +92,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.features2')
+                @component('front-office.components.features2')
                     @slot('icon')
                         far fa-file-alt
                     @endslot
@@ -104,7 +104,7 @@
                     @endslot
                 @endcomponent
 
-                @component('components.features2')
+                @component('front-office.components.features2')
                     @slot('icon')
                         far fa-comments
                     @endslot

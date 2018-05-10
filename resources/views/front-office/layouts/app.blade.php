@@ -16,11 +16,11 @@
 
   <body>
     
-      @include('header.header')
+      @include('front-office.header.header')
 
-      @yield('content')
+      @yield('front-office.content')
 
-      @include('footer.footer')
+      @include('front-office.footer.footer')
     
   
 

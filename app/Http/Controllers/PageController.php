@@ -15,7 +15,7 @@ class PageController extends Controller
     {
         $prenom = 'Simon';
         $nom = 'Gheux';
-        return view('content', compact('prenom', 'nom'));
+        return view('front-office.content', compact('prenom', 'nom'));
     }
 
     /**

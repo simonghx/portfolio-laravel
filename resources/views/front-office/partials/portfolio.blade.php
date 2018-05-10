@@ -1,6 +1,6 @@
 <!-- Début PORTFOLIO -->
     <section id="portfolio" class="section-padding">
-        @component('components.soustitre')
+        @component('front-office.components.soustitre')
             @slot('subtitle')
                 Our Portfolio
             @endslot
@@ -35,47 +35,47 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                 <div class="row mb-4">
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/01.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/02.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/03.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/04.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/05.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/06.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/07.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/08.jpg
                             @endslot
                         @endcomponent
-                        @component('components.galerie')
+                        @component('front-office.components.galerie')
                             @slot('image')
                                 ./img/gallery/09.jpg
                             @endslot

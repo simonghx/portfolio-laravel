@@ -9,7 +9,7 @@
             <h2>Some Interesting Facts</h2>
         </div>
         <div class="row text-white">
-            @component('components.factsicon')
+            @component('front-office.components.factsicon')
                 @slot('icon')
                     fas fa-trophy
                 @endslot
@@ -23,7 +23,7 @@
                 @endslot
             @endcomponent
 
-            @component('components.factsicon')
+            @component('front-office.components.factsicon')
                 @slot('icon')
                     fas fa-bullseye
                 @endslot
@@ -37,7 +37,7 @@
                 @endslot
             @endcomponent
 
-            @component('components.factsicon')
+            @component('front-office.components.factsicon')
                 @slot('icon')
                     fas fa-briefcase
                 @endslot
@@ -51,7 +51,7 @@
                 @endslot
             @endcomponent
 
-            @component('components.factsicon')
+            @component('front-office.components.factsicon')
                 @slot('icon')
                     fas fa-male
                 @endslot

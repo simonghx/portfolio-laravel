@@ -1,6 +1,6 @@
 <!-- Section CONTACT -->
     <section id="contact" class="section-padding">
-        @component('components.soustitre')
+        @component('front-office.components.soustitre')
             @slot('subtitle')
                 Contact Us
             @endslot

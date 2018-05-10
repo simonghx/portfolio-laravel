@@ -1,6 +1,6 @@
 <!-- Début section about -->
     <section id="about" class="section-padding">
-        @component('components.soustitre')
+        @component('front-office.components.soustitre')
             @slot('subtitle')
                 About Our Studio
             @endslot
@@ -12,7 +12,7 @@
 
         <div class="container text-center mt-5">
         <div class="row">
-            @component ('components.infos')
+            @component ('front-office.components.infos')
                 @slot('icon')
                     fab fa-react
                 @endslot
@@ -25,7 +25,7 @@
 
             @endcomponent
 
-            @component ('components.infos')
+            @component ('front-office.components.infos')
                 @slot('icon')
                     fas fa-laptop
                 @endslot
@@ -38,7 +38,7 @@
 
             @endcomponent
 
-            @component ('components.infos')
+            @component ('front-office.components.infos')
                 @slot('icon')
                     fas fa-camera-retro
                 @endslot
